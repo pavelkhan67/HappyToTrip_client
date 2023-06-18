@@ -5,7 +5,7 @@ const useHotels = () => {
     const {data: hotel = [], isLoading: loading, refetch} = useQuery({
         queryKey: ['hotel'],
         queryFn: async() => {
-            const res = await fetch('http://localhost:5000/hotel');
+            const res = await fetch('https://happy-to-trip-server.vercel.app/hotel');
             return res.json();
         }
     })

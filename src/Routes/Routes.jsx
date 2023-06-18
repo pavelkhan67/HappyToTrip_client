@@ -38,7 +38,7 @@ export const router = createBrowserRouter([
             {
                 path: "/place/:id",
                 element: <SinglePlace></SinglePlace>,
-                loader: ({ params }) => fetch(`http://localhost:5000/place/${params.id}`)
+                loader: ({ params }) => fetch(`https://happy-to-trip-server.vercel.app/place/${params.id}`)
             },
             {
                 path: "/hotels",
@@ -47,7 +47,7 @@ export const router = createBrowserRouter([
             {
                 path: "/hotel/:id",
                 element: <SingleHotel></SingleHotel>,
-                loader: ({ params }) => fetch(`http://localhost:5000/hotel/${params.id}`)
+                loader: ({ params }) => fetch(`https://happy-to-trip-server.vercel.app/hotel/${params.id}`)
             },
             {
                 path: "/login",

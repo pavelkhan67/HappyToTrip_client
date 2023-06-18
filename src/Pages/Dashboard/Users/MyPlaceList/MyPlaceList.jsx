@@ -19,7 +19,7 @@ const MyPlaceList = () => {
             confirmButtonText: 'Yes, delete it!'
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:5000/selected/${place._id}`, {
+                fetch(`https://happy-to-trip-server.vercel.app/selected/${place._id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())

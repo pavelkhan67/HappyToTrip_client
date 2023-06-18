@@ -18,7 +18,7 @@ const Payment = () => {
     const Price = parseFloat(PriceInitial?.toFixed(2))
 
     const handlePay = (SingleHotel) => {
-        fetch(`http://localhost:5000/bookings/${SingleHotel._id}`, {
+        fetch(`https://happy-to-trip-server.vercel.app/bookings/${SingleHotel._id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())
@@ -29,7 +29,7 @@ const Payment = () => {
                     })
     }
     const handleUpdate = (SingleHotel) => {
-        fetch(`http://localhost:5000/bookings/${SingleHotel.SelectedId}`, {
+        fetch(`https://happy-to-trip-server.vercel.app/bookings/${SingleHotel.SelectedId}`, {
                     method: 'PATCH'
                 })
                     .then(res => res.json())
