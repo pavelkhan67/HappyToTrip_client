@@ -5,6 +5,8 @@ import Banner from '../Banner/Banner';
 import SliderPlace from '../Slider/SliderPlace';
 import PopularPlaces from '../PopularPlaces/PloularPlaces';
 import PopularHotels from '../PopularHotels/PopularHotels';
+import Message from '../Message/Message';
+import Contact from '../Contact/Contact';
 
 const Home = () => {
     return (
@@ -19,7 +21,9 @@ const Home = () => {
             </Helmet>
             <Banner></Banner>
             <SliderPlace></SliderPlace>
+            <Message></Message>
             <PopularPlaces></PopularPlaces>
+            <Contact></Contact>
             <PopularHotels></PopularHotels>
         </motion.div>
     );

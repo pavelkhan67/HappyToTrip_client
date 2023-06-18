@@ -22,8 +22,8 @@ const Footer = () => {
                     </div>
                     <p>Location: Dhaka, Bangladesh</p>
                     <p>Contact Us: </p>
-                    <p>Email: abc@gmail.com</p>
-                    <p>Call: +88 0000000000</p>
+                    <p>Email: paveltopu67@gmail.com</p>
+                    <p>Call: +88 01634305859</p>
 
                 </div>
             </div>

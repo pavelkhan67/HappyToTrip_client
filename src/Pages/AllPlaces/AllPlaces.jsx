@@ -3,12 +3,18 @@ import usePlaces from '../../hooks/usePlaces';
 import SectionTitle from '../../components/SectionTitle/SectionTitle';
 import Places from '../Shared/Places';
 import { Helmet } from 'react-helmet-async';
+import { motion } from "framer-motion";
 
 const AllPlaces = () => {
     const [place] = usePlaces();
     const allPlaces = place;
     return (
-        <>
+        <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 2 }}
+        >
             <Helmet>
                 <title>Happy To Trip | All Places</title>
             </Helmet>
@@ -23,7 +29,7 @@ const AllPlaces = () => {
                     ></Places>)
                 }
             </div>
-        </>
+        </motion.div>
     );
 };
 

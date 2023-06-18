@@ -3,6 +3,7 @@ import useHotels from '../../hooks/useHotels';
 import Hotels from '../Shared/Hotels';
 import SectionTitle from '../../components/SectionTitle/SectionTitle';
 import { Helmet } from 'react-helmet-async';
+import { motion } from "framer-motion";
 
 const AllHotels = () => {
     const [hotel] = useHotels();
@@ -19,7 +20,12 @@ const AllHotels = () => {
             });
     };
     return (
-        <>
+        <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 2 }}
+        >
             <Helmet>
                 <title>Happy To Trip | All Hotels</title>
             </Helmet>
@@ -43,7 +49,7 @@ const AllHotels = () => {
                     ></Hotels>)
                 }
             </div>
-        </>
+        </motion.div>
     );
 };
 

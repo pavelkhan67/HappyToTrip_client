@@ -37,7 +37,7 @@ const Dashboard = () => {
             </Helmet>
             <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content flex flex-col items-center justify-center mt-5">
-                <label htmlFor="my-drawer-2" className="btn btn-primary drawer-button mb-5 lg:hidden">Open drawer</label>
+                <label htmlFor="my-drawer-2" className="btn btn-outline text-green-600 bg-slate-100 border-0 border-b-4 border-r-4 border-green-600 drawer-button mb-5 lg:hidden">Open drawer</label>
                 {
                     location.pathname === '/dashboard' ? <p className='text-2xl font-bold'>Please Select a Route</p> : ''
                 }
