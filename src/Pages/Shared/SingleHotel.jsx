@@ -21,7 +21,7 @@ const SingleHotel = () => {
     }, [])
 
     const handleSelect = hotel => {
-        // console.log(item);
+        // console.log(hotel);
         if (user && user.email) {
             const SelectedItem = { SelectedId: _id, name, image, price, location, category, email: user.email }
             fetch('https://happy-to-trip-server.vercel.app/bookings', {
@@ -34,7 +34,7 @@ const SingleHotel = () => {
                 .then(res => res.json())
                 .then(data => {
                     if (data.insertedId) {
-                        refetch(); // refetch cart to update the number of items in the cart
+                        refetch(); // refetch cart to update the number of hotel in the cart
                         Swal.fire({
                             icon: 'success',
                             title: 'Hotel Added To My Hotel List.',

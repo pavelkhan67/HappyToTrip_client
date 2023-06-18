@@ -45,7 +45,7 @@ const Dashboard = () => {
             </div>
             <div className="drawer-side">
                 <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
-                <ul className="menu p-4 w-80 bg-slate-600 text-white h-full">
+                <ul className="menu p-4 w-48 lg:w-80 bg-slate-600 text-white h-full">
                     {
                         person?.role === 'admin' ? <>
                             <li><NavLink to="/dashboard/managehotel"><FaTasks></FaTasks> Manage Hotels</NavLink></li>

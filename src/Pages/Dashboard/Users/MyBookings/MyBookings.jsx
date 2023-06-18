@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { FaTrashAlt } from 'react-icons/fa';
 import Swal from 'sweetalert2';
@@ -8,6 +8,15 @@ import SectionTitle from '../../../../components/SectionTitle/SectionTitle';
 
 const MyBookings = () => {
     const [hotels, refetch] = useBookings();
+    const [selectedHotelId, setSelectedHotelId] = useState(null);
+    const [selectedHotelPrice, setSelectedHotelPrice] = useState(null);
+    const [bookingDays, setBookingDays] = useState('');
+    const [bookingDate, setBookingDate] = useState('');  
+
+    const handlePay = hotel => {
+        setSelectedHotelId(hotel._id);
+        setSelectedHotelPrice(hotel.price);
+    }
 
     const handleDelete = hotel => {
         Swal.fire({
@@ -84,12 +93,51 @@ const MyBookings = () => {
                                     <button onClick={() => handleDelete(hotel)} className="btn btn-ghost bg-red-600  text-white"><FaTrashAlt></FaTrashAlt></button>
                                 </td>
                                 <td>
-                                    <Link to={`/dashboard/payment/${hotel._id}`}><button className="btn btn-outline text-green-600 bg-slate-100 border-0 border-b-4 border-r-4 border-green-600">PAY</button></Link>
+                                    <button
+                                        onClick={() => {
+                                            window.my_modal_1.showModal();
+                                            handlePay(hotel);
+                                        }}
+                                        className="btn btn-outline text-green-600 bg-slate-100 border-0 border-b-4 border-r-4 border-green-600"
+                                    >
+                                        PAY
+                                    </button>
                                 </td>
                             </tr>)
+
                         }
                     </tbody>
                 </table>
+                <dialog id="my_modal_1" className="modal">
+                    <form method="dialog" className="modal-box">
+                        <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                        <div>
+                            <label htmlFor="bookingDays" className="block">Number of days:</label>
+                            <input
+                                type="number"
+                                id="bookingDays"
+                                value={bookingDays}
+                                onChange={e => setBookingDays(e.target.value)}
+                                className="border border-gray-300 rounded-md px-2 py-1 mt-1"
+                            />
+                        </div>
+                        <div>
+                            <label htmlFor="bookingDate" className="block">Booking date:</label>
+                            <input
+                                type="date"
+                                id="bookingDate"
+                                value={bookingDate}
+                                onChange={e => setBookingDate(e.target.value)}
+                                className="border border-gray-300 rounded-md px-2 py-1 mt-1"
+                            />
+                        </div>
+                        <p className='font-semibold pt-5'>Total Taka: <span className='text-green-600'>{selectedHotelPrice * bookingDays}</span></p>
+                        <div className="modal-action">
+                            {/* if there is a button in form, it will close the modal */}
+                            <Link to={`/dashboard/payment/${selectedHotelId}`}><button className="btn btn-outline text-green-600 bg-slate-100 border-0 border-b-4 border-r-4 border-green-600">PAY</button></Link>
+                        </div>
+                    </form>
+                </dialog>
             </div>
         </div>
     );

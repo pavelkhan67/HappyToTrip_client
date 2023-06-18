@@ -3,6 +3,6 @@
 @tailwind utilities;
 
 .drawer-side a.active {
-    color: green;
-    background-color: aliceblue;
-  }
+  color: green;
+  background-color: aliceblue;
+}

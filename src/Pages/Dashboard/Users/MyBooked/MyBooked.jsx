@@ -30,7 +30,6 @@ const MyBooked = () => {
                             <th>Hotel Name</th>
                             <th>Price</th>
                             <th>Date</th>
-                            <th>Transaction Id</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -53,7 +52,6 @@ const MyBooked = () => {
                                 </td>
                                 <td>${item.price}</td>
                                 <td>{item.date.split('T')[0]}</td>
-                                <td>{item.transactionId}</td>
                             </tr>)
                         }
                     </tbody>
