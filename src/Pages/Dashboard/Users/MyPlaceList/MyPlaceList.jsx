@@ -42,10 +42,12 @@ const MyPlaceList = () => {
             <Helmet>
                 <title>Happy To Trip | My Place List</title>
             </Helmet>
+            <div className="w-10/12 md:w-full ">
             <SectionTitle
                 heading="My Place List"
             ></SectionTitle>
-            <div className="uppercase font-semibold h-[60px] py-10">
+            </div>
+            <div className="uppercase font-semibold h-[60px] px-2">
                 <h3 className="text-xl">Total Place: {places.length}</h3>
             </div>
             <div className="overflow-x-auto w-full pb-10">

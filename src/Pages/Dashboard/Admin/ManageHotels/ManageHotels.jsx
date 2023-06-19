@@ -57,9 +57,11 @@ const ManageHotels = () => {
             <Helmet>
                 <title>Happy To Trip | Manage Hotels</title>
             </Helmet>
-            <SectionTitle
-                heading="Manage Hotels"
-            ></SectionTitle>
+            <div className="w-7/12 md:w-full">
+                <SectionTitle
+                    heading="Manage Hotels"
+                ></SectionTitle>
+            </div>
             <div className="uppercase font-semibold h-[60px] flex justify-between items-center gap-5 py-10">
                 <h3 className="text-xl">Total Hotels: {ManageHotel.length}</h3>
             </div>

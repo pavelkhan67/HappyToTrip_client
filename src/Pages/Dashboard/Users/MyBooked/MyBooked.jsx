@@ -17,7 +17,7 @@ const MyBooked = () => {
             <SectionTitle
                 heading="My Booked Hotel"
             ></SectionTitle>
-            <div className="uppercase font-semibold py-10">
+            <div className="uppercase font-semibold h-[60px] px-2">
                 <h3 className="text-xl">Total Hotel: {BookedHotel.length}</h3>
             </div>
             <div className="overflow-x-auto w-full pb-10">
@@ -50,7 +50,7 @@ const MyBooked = () => {
                                 <td>
                                     {item.name}
                                 </td>
-                                <td>${item.price}</td>
+                                <td>{item.price} Tk.</td>
                                 <td>{item.date.split('T')[0]}</td>
                             </tr>)
                         }

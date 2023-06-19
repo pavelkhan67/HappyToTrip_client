@@ -16,7 +16,7 @@ const Dashboard = () => {
     const [hotels] = useBookings();
     const [booked] = useBooked();
     const location = useLocation();
-    const {user} = useContext(AuthContext);
+    const { user } = useContext(AuthContext);
     const [axiosSecure] = useAxiosSecure();
     const { data: users = [], refetch } = useQuery(['users'], async () => {
         const res = await axiosSecure.get('/users')
@@ -36,8 +36,8 @@ const Dashboard = () => {
                 <title>Happy To Trip | Dashboard</title>
             </Helmet>
             <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
-            <div className="drawer-content flex flex-col items-center justify-center mt-5">
-                <label htmlFor="my-drawer-2" className="btn btn-outline text-green-600 bg-slate-100 border-0 border-b-4 border-r-4 border-green-600 drawer-button mb-5 lg:hidden">Open drawer</label>
+            <div className="drawer-content lg:flex flex-col items-center justify-center mt-5">
+                <label htmlFor="my-drawer-2" className="ms-5 btn btn-outline text-green-600 bg-slate-100 border-0 border-b-4 border-r-4 border-green-600 drawer-button mb-5 lg:hidden">Open drawer</label>
                 {
                     location.pathname === '/dashboard' ? <p className='text-2xl font-bold'>Please Select a Route</p> : ''
                 }

@@ -27,8 +27,8 @@ const AddHotel = () => {
             .then(imgResponse => {
                 if (imgResponse.success) {
                     const imgURL = imgResponse.data.display_url;
-                    const { name, price, location, mngemail, booked, category, info, rating, status } = data;
-                    const newItem = { name, price: parseFloat(price), image: imgURL, email: mngemail, booked: parseFloat(booked), location, category, rating:parseFloat(rating), info, status }
+                    const { name, price, location, mngemail, booked, troom, aroom, category, info, rating, status } = data;
+                    const newItem = { name, price: parseFloat(price), image: imgURL, email: mngemail, booked: parseFloat(booked), location, category, availableRoom:parseFloat(aroom), totalRoom:parseFloat(troom), rating:parseFloat(rating), info, status }
                     // console.log(newItem)
                     axiosSecure.post('/addedhotel', newItem)
                         .then(data => {
@@ -105,7 +105,7 @@ const AddHotel = () => {
                             <span className="label-text">Booked*</span>
                         </label>
                         <input type="number" value={0}
-                            {...register("booked", { required: true, maxLength: 80 })}
+                            {...register("booked", { required: true, maxLength: 10 })}
                             className="input input-bordered w-full " />
                     </div>
                 </div>
@@ -125,6 +125,24 @@ const AddHotel = () => {
                             <span className="label-text font-semibold">Status*</span>
                         </label>
                         <input type="text" {...register("status", { required: true })} value={'pending'} className="input input-bordered w-full " />
+                    </div>
+                </div>
+                <div className="flex my-4">
+                    <div className="form-control w-full ">
+                        <label className="label">
+                            <span className="label-text">Total Room*</span>
+                        </label>
+                        <input type="number" defaultValue={40}
+                            {...register("troom", { required: true, maxLength: 10 })}
+                            className="input input-bordered w-full " />
+                    </div>
+                    <div className="form-control w-full ml-4">
+                        <label className="label">
+                            <span className="label-text">Available Room*</span>
+                        </label>
+                        <input type="number" defaultValue={35}
+                            {...register("aroom", { required: true, maxLength: 10 })}
+                            className="input input-bordered w-full " />
                     </div>
                 </div>
                 <div className='flex my-4 '>

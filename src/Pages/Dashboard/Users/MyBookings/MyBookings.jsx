@@ -11,7 +11,7 @@ const MyBookings = () => {
     const [selectedHotelId, setSelectedHotelId] = useState(null);
     const [selectedHotelPrice, setSelectedHotelPrice] = useState(null);
     const [bookingDays, setBookingDays] = useState('');
-    const [bookingDate, setBookingDate] = useState('');  
+    const [bookingDate, setBookingDate] = useState('');
 
     const handlePay = hotel => {
         setSelectedHotelId(hotel._id);
@@ -52,9 +52,11 @@ const MyBookings = () => {
             <Helmet>
                 <title>Happy To Trip | My Hotel List</title>
             </Helmet>
-            <SectionTitle
-                heading="My Hotel List"
-            ></SectionTitle>
+            <div className="w-7/12 md:w-full ">
+                <SectionTitle
+                    heading="My Hotel List"
+                ></SectionTitle>
+            </div>
             <div className="overflow-x-auto w-full pb-10">
                 <table className="table w-full ">
                     {/* head */}
@@ -88,7 +90,7 @@ const MyBookings = () => {
                                     {hotel.name}
                                 </td>
                                 <td>{hotel.email}</td>
-                                <td>${hotel.price}</td>
+                                <td>{hotel.price} Tk.</td>
                                 <td>
                                     <button onClick={() => handleDelete(hotel)} className="btn btn-ghost bg-red-600  text-white"><FaTrashAlt></FaTrashAlt></button>
                                 </td>
@@ -131,7 +133,7 @@ const MyBookings = () => {
                                 className="border border-gray-300 rounded-md px-2 py-1 mt-1"
                             />
                         </div>
-                        <p className='font-semibold pt-5'>Total Taka: <span className='text-green-600'>{selectedHotelPrice * bookingDays}</span></p>
+                        <p className='font-semibold pt-5'>Total Taka: <span className='text-green-600'>{selectedHotelPrice * bookingDays} Tk.</span></p>
                         <div className="modal-action">
                             {/* if there is a button in form, it will close the modal */}
                             <Link to={`/dashboard/payment/${selectedHotelId}`}><button className="btn btn-outline text-green-600 bg-slate-100 border-0 border-b-4 border-r-4 border-green-600">PAY</button></Link>

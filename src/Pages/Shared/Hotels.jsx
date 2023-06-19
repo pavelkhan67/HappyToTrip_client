@@ -5,7 +5,7 @@ const Hotels = ({hotel}) => {
     // console.log(hotel);
     const {name, image, info, location, rating, _id, price, category} = hotel;
     return (
-        <div className="card w-full bg-base-100 shadow-xl">
+        <div className="card w-full bg-base-200 shadow-xl">
             <figure className="px-10 pt-10">
                 <img src={image} alt="Place" className="rounded-xl h-52 lg:h-72 w-full" />
             </figure>

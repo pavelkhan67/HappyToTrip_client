@@ -51,10 +51,12 @@ const MyHotels = () => {
             <Helmet>
                 <title>Happy To Trip | My Hotels</title>
             </Helmet>
+            <div className="w-3/5 md:w-full">
             <SectionTitle
                 heading="My Hotels"
             ></SectionTitle>
-            <div className="uppercase font-semibold h-[60px] flex justify-between items-center gap-5 py-10">
+            </div>
+            <div className="uppercase font-semibold h-[60px] px-2">
                 <h3 className="text-xl">Total Hotels: {Hotels.length}</h3>
             </div>
             <div className="overflow-x-auto w-full pb-10">
@@ -66,6 +68,7 @@ const MyHotels = () => {
                             <th>Hotels</th>
                             <th>Hotel Name</th>
                             <th>Price</th>
+                            <th>Available Room</th>
                             <th>Booked</th>
                             <th>Status</th>
                             <th>Action</th>
@@ -89,7 +92,8 @@ const MyHotels = () => {
                                 <td>
                                     {hotel.name}
                                 </td>
-                                <td>${hotel.price}</td>
+                                <td>{hotel.price} Tk.</td>
+                                <td>{hotel.availableRoom} room</td>
                                 <td>{hotel.booked} times</td>
                                 <td>{hotel.status}</td>
                                 <td>

@@ -12,10 +12,12 @@ const PaymentHistory = () => {
             <Helmet>
                 <title>Happy To Trip | My Payment History</title>
             </Helmet>
-            <SectionTitle
-                heading="My Payment History"
-            ></SectionTitle>
-            <div className="uppercase font-semibold py-10">
+            <div className="w-8/12 md:w-full ml-2 md:ml-0">
+                <SectionTitle
+                    heading="My Payment History"
+                ></SectionTitle>
+            </div>
+            <div className="uppercase font-semibold h-[60px] px-2">
                 <h3 className="text-xl">Total Hotel: {PaymentHistory.length}</h3>
             </div>
             <div className="overflow-x-auto w-full pb-10">
@@ -49,7 +51,7 @@ const PaymentHistory = () => {
                                 <td>
                                     {item.name}
                                 </td>
-                                <td>${item.price}</td>
+                                <td>{item.price} Tk.</td>
                                 <td>{item.date.split('T')[0]}</td>
                                 <td>{item.transactionId}</td>
                             </tr>)

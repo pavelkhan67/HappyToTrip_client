@@ -13,7 +13,7 @@ const SingleHotel = () => {
     const { user } = useContext(AuthContext);
     const hotel = useLoaderData();
     const [, refetch] = useBookings();
-    const { name, image, info, location, rating, _id, price, category } = hotel;
+    const { name, image, info, location, rating, _id, price, category, totalRoom, availableRoom } = hotel;
     // console.log(hotel);
 
     useEffect(() => {
@@ -72,18 +72,28 @@ const SingleHotel = () => {
                 </Helmet>
                 <figure><img className='lg:h-[100vh] w-full rounded-xl' src={image} alt="Hotel" /></figure>
                 <div className="w-full h-full bg-base-100 shadow-xl lg:col-span-2">
-                    <figure className='lg:relative bg-black bg-blend-multiply hidden lg:block rounded-xl lg:h-[100vh]'><img className='opacity-40 rounded-xl h-full w-full' src={image} alt="Hotel" /></figure>
+                    <figure className={`lg:relative  bg-blend-multiply hidden lg:block rounded-xl lg:h-[100vh] ${availableRoom > 0 ? 'bg-black' : 'bg-red-600'} shadow-xl`}><img className='opacity-40 rounded-xl h-full w-full' src={image} alt="Hotel" /></figure>
                     <div className="lg:absolute lg:top-40 justify-center lg:text-white">
                         <div className=' m-5 lg:m-10' data-aos="fade-down-right" data-aos-duration="1000">
                             <h2 className="text-3xl font-semibold">{name}</h2>
                             <p className="pt-3 mr-5">{info}</p>
                             <p className="pt-3"><span className='font-semibold'>Location:</span> {location}</p>
-                            <p className="pt-3 flex items-center gap-2"><span className='font-semibold'>Rating:</span> {rating} <FaStar className='text-yellow-500'></FaStar></p>
-                            <p className="pt-3"><span className='font-semibold'>Price:</span> {price} Tk.</p>
-                            <p className="pt-3"><span className='font-semibold'>Category:</span> {category}</p>
-                            <div className=" pt-5">
-                                <button onClick={() => handleSelect(hotel)} className='btn btn-outline text-green-600 bg-slate-100 border-0 border-b-4 border-r-4 border-green-600'>Book Now</button>
+                            <div className="flex gap-5">
+                                <p className="pt-3 flex items-center gap-2"><span className='font-semibold'>Rating:</span> {rating} <FaStar className='text-yellow-500'></FaStar></p>
+                                <p className="pt-3"><span className='font-semibold'>Price:</span> {price} Tk.</p>
                             </div>
+                            <p className="pt-3"><span className='font-semibold'>Category:</span> {category}</p>
+                            <p className="pt-3"><span className='font-semibold'>Total Room:</span> {totalRoom}</p>
+                            <p className="pt-3"><span className='font-semibold'>Available Room:</span> {availableRoom}</p>
+                            {
+                                availableRoom > 0 ?
+                                    <div className=" pt-5">
+                                        <button onClick={() => handleSelect(hotel)} className='btn btn-outline text-green-600 bg-slate-100 border-0 border-b-4 border-r-4 border-green-600'>Book Now</button>
+                                    </div> :
+                                    <div className=" pt-5">
+                                        <button disabled={true} className='btn btn-outline text-white border-2'>Book Now</button>
+                                    </div>
+                            }
                         </div>
                     </div>
                 </div>

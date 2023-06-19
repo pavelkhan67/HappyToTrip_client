@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet-async";
 import { FaTrashAlt, FaUserShield } from "react-icons/fa";
 import Swal from "sweetalert2";
 import useAxiosSecure from "../../../../hooks/useAxiosSecure";
+import SectionTitle from "../../../../components/SectionTitle/SectionTitle";
 
 
 const AllUsers = () => {
@@ -46,41 +47,43 @@ const AllUsers = () => {
             <Helmet>
                 <title>Happy To Trip | Manage Users</title>
             </Helmet>
-            <div className='text-center mb-5'>
-                <h2 className='text-4xl font-semibold'>Manage Users</h2>
+            <div className="w-8/12 md:w-full ml-2 md:ml-0">
+                <SectionTitle
+                    heading="Manage Users"
+                ></SectionTitle>
             </div>
             <div className="w-full mx-10 mb-5">
-            <h3 className="text-xl uppercase font-semibold my-4">Total Users: {users.length}</h3>
-            <div className="overflow-x-auto">
-                <table className="table table-zebra w-full">
-                    {/* head */}
-                    <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>Name</th>
-                            <th>Email</th>
-                            <th>Role</th>
-                            <th>Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {
-                            users.map((user, index) => <tr key={user._id}>
-                                <th>{index + 1}</th>
-                                <td>{user.name}</td>
-                                <td>{user.email}</td>
-                                <td>{
+                <h3 className="text-xl uppercase font-semibold my-4">Total Users: {users.length}</h3>
+                <div className="overflow-x-auto">
+                    <table className="table table-zebra w-full">
+                        {/* head */}
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Role</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {
+                                users.map((user, index) => <tr key={user._id}>
+                                    <th>{index + 1}</th>
+                                    <td>{user.name}</td>
+                                    <td>{user.email}</td>
+                                    <td>{
                                         user.role === 'admin' ? 'admin' : user.role === 'manager' ? 'manager' : user.role = 'user'
                                     }</td>
-                                <td>{
-                                    user.role === 'admin' ? <button disabled='true' className="btn btn-ghost bg-red-600  text-white"><FaTrashAlt></FaTrashAlt></button> : <button onClick={() => handleDelete(user)} className="btn btn-ghost bg-red-600  text-white"><FaTrashAlt></FaTrashAlt></button>
+                                    <td>{
+                                        user.role === 'admin' ? <button disabled='true' className="btn btn-ghost bg-red-600  text-white"><FaTrashAlt></FaTrashAlt></button> : <button onClick={() => handleDelete(user)} className="btn btn-ghost bg-red-600  text-white"><FaTrashAlt></FaTrashAlt></button>
                                     }</td>
-                            </tr>)
-                        }
-                        
-                    </tbody>
-                </table>
-            </div>
+                                </tr>)
+                            }
+
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     );

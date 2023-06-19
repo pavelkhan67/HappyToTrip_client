@@ -18,10 +18,12 @@ const AllPlaces = () => {
             <Helmet>
                 <title>Happy To Trip | All Places</title>
             </Helmet>
-            <SectionTitle
-                heading="All Places"
-            ></SectionTitle>
-            <div className="grid md:grid-cols-2 gap-8 my-5">
+            <div className="lg:my-10">
+                <SectionTitle
+                    heading="All Places"
+                ></SectionTitle>
+            </div>
+            <div className="grid md:grid-cols-2 gap-8 mb-5">
                 {
                     allPlaces.map(place => <Places
                         key={place._id}
