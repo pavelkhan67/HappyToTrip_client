@@ -52,12 +52,12 @@ const MyBookings = () => {
             <Helmet>
                 <title>Happy To Trip | My Hotel List</title>
             </Helmet>
-            <div className="w-7/12 md:w-full ">
+            <div className="w-full ">
                 <SectionTitle
                     heading="My Hotel List"
                 ></SectionTitle>
             </div>
-            <div className="overflow-x-auto w-full pb-10">
+            <div className="overflow-x-auto w-full pb-10 absolute md:static">
                 <table className="table w-full ">
                     {/* head */}
                     <thead>
@@ -110,7 +110,7 @@ const MyBookings = () => {
                         }
                     </tbody>
                 </table>
-                <dialog id="my_modal_1" className="modal">
+                <dialog id="my_modal_1" className="modal relative -top-40 md:static md:-top-0">
                     <form method="dialog" className="modal-box">
                         <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
                         <div>

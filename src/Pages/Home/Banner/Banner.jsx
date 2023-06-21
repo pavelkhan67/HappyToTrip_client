@@ -22,7 +22,7 @@ const Banner = () => {
             transition={{ duration: 2 }}
         >
             <Carousel className='text-center'>
-                <div className="relative w-full h-[75vh] lg:h-[90vh]">
+                <div className="relative w-full h-[73vh] lg:h-[90vh]">
                     <img src={img1} className="w-full h-full" />
                     <div className=" absolute h-full flex items-center gap-4 left-0 top-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
                         <div className='text-white space-y-7 w-10/12 lg:w-1/2 pl-16' data-aos="fade-down-right" data-aos-duration="1000">
@@ -39,7 +39,7 @@ const Banner = () => {
                         </div>
                     </div>
                 </div>
-                <div className="relative w-full h-[75vh] lg:h-[90vh]">
+                <div className="relative w-full h-[73vh] lg:h-[90vh]">
                     <img src={img2} className="w-full h-full" />
                     <div className=" absolute h-full flex items-center gap-4 left-0 top-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
                         <div className='text-white space-y-7 w-10/12 lg:w-1/2 pl-16' data-aos="fade-down-right" data-aos-duration="1000">
@@ -56,7 +56,7 @@ const Banner = () => {
                         </div>
                     </div>
                 </div>
-                <div className="relative w-full h-[75vh] lg:h-[90vh]">
+                <div className="relative w-full h-[73vh] lg:h-[90vh]">
                     <img src={img3} className="w-full h-full" />
                     <div className=" absolute h-full flex items-center gap-4 left-0 top-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
                         <div className='text-white space-y-7 w-10/12 lg:w-1/2 pl-16' data-aos="fade-down-right" data-aos-duration="1000">
@@ -73,7 +73,7 @@ const Banner = () => {
                         </div>
                     </div>
                 </div>
-                <div className="relative w-full h-[75vh] lg:h-[90vh]">
+                <div className="relative w-full h-[73vh] lg:h-[90vh]">
                     <img src={img4} className="w-full h-full" />
                     <div className=" absolute h-full flex items-center gap-4 left-0 top-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
                         <div className='text-white space-y-7 w-10/12 lg:w-1/2 pl-16' data-aos="fade-down-right" data-aos-duration="1000">
