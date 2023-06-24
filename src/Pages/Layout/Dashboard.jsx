@@ -26,7 +26,7 @@ const Dashboard = () => {
     const person = users.find(p => p.email === user.email);
 
     return (
-        <motion.div className="drawer lg:drawer-open"
+        <motion.div className="drawer md:drawer-open"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -37,15 +37,15 @@ const Dashboard = () => {
             </Helmet>
             <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content lg:flex flex-col items-center justify-center mt-5">
-                <label htmlFor="my-drawer-2" className="ms-5 btn btn-outline text-green-600 bg-slate-100 border-0 border-b-4 border-r-4 border-green-600 drawer-button mb-5 lg:hidden">Open drawer</label>
+                <label htmlFor="my-drawer-2" className="ms-5 btn btn-outline text-green-600 bg-slate-100 border-0 border-b-4 border-r-4 border-green-600 drawer-button mb-5 md:hidden">Open drawer</label>
                 {
-                    location.pathname === '/dashboard' ? <p className='text-2xl font-bold'>Please Select a Route</p> : ''
+                    location.pathname === '/dashboard' ? <p className='text-2xl font-bold ms-5 md:mt-20 lg:mt-0'>Please Select a Route</p> : ''
                 }
                 <Outlet></Outlet>
             </div>
-            <div className="drawer-side">
+            <div className="drawer-side -ms-0 md:-ms-10 lg:-ms-0">
                 <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
-                <ul className="menu p-4 w-48 lg:w-80 bg-slate-600 text-white h-full">
+                <ul className="menu p-4 w-44 lg:w-80 bg-slate-600 text-white h-full">
                     {
                         person?.role === 'admin' ? <>
                             <li><NavLink to="/dashboard/managehotel"><FaTasks></FaTasks> Manage Hotels</NavLink></li>

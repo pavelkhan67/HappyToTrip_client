@@ -20,7 +20,7 @@
     {
       "name": "Chittagong Hill Tracks",
       "image": "https://i.ibb.co/VtQ3Jh7/Zakir-20.jpg",
-      "category": "winter",
+      "category": "Winter",
       "info": "Hills are always enchanting to the tourist and as a tourist, you should obviously visit Chittagong Hill Tracks once which is the home of many tribal and you can discover yourself in the amazing green view. Chittagong Hill Tracks is the best place for making an adventurous tour and for this you have to take permission from the authority.",
       "location": "Khagrachari District, Chittagong Division",
       "rating": 4.0,
@@ -38,7 +38,7 @@
     {
       "name": "Srimagal",
       "image": "https://i.ibb.co/yQqFS6Q/image005-1024x684.jpg",
-      "category": "winter",
+      "category": "Winter",
       "info": "The Capital of tea in Bangladesh is Srimagal which is situated in the north-eastern part of the country where you will find lush greenery fields all around. It is one of the best places in Bangladesh where you can really have the place & clam environment and there are two more visiting places too, Lawachhara National Park & Hamham Waterfalls.",
       "location": "Moulvibazar District, Sylhet Division",
       "rating": 4.8,
@@ -74,7 +74,7 @@
     {
       "name": "Paharpur",
       "image": "https://i.ibb.co/pKBbWfG/800px-Paharpur-Buddhist-Bihar.jpg",
-      "category": "winter",
+      "category": "Winter",
       "info": "Paharpur is the most impressive archeological site of Bangladesh which is known as Sompuri Maharabihara which has declared World Heritage Site by UNESCO and it is situated in the northwestern part of the country. In the initial period, it was the best Buddhist Monastery where people came for higher study from all over the world.",
       "location": "Naogaon District, Rajshahi Division",
       "rating": 4.5,
@@ -92,7 +92,7 @@
     {
       "name": "Lalbag Fort",
       "image": "https://i.ibb.co/2YkXzJy/Lalbagh-Fort-Dhaka.jpg",
-      "category": "summer",
+      "category": "Summer",
       "info": "Lalbag Fort or Aurangabad is another most famous historical place in Bangladesh. It is situated beside the Buriganga River, in the southwestern part of Dhaka, Bangladesh. It was built by Mudmhammad Azam in 1678. Lalbag Fort represents the incomplete dream of the Mughal prince. The fort remained incomplete after the death of Prince Azam.",
       "location": "Dhaka, Bangladesh",
       "rating": 4.5,
@@ -110,7 +110,7 @@
     {
       "name": "Ahsan Manzil",
       "image": "https://i.ibb.co/Jmjn8DV/ahsan-monjil.jpg",
-      "category": "summer",
+      "category": "Summer",
       "info": "Ahsan Manzil or the Pink Palace, the most meaningful architectural heritage, was built by Nawab Abdul Gani in 1872. This two-story building is now a museum displaying all kinds of objects of the owner of that time. So you can feel the lifestyle of the Nawabs of Bengal. It has 23 galleries displaying historical things.",
       "location": "Kumartoli Dhaka, Bangladesh",
       "rating": 4.5,
@@ -128,7 +128,7 @@
     {
       "name": "Bisanakandi",
       "image": "https://i.ibb.co/yBySyFN/31056385007-f81c1aebbb-b.jpg",
-      "category": "rainy",
+      "category": "Rainy",
       "info": "Undoubtedly it is a great sign of natural beauty surrounded by hills and stones. For its natural beauty, it has become a popular tourist center in Bangladesh. It is situated at the Bangladesh-Sylhet border in Sylhet. In the rainy season it looks like the clouds hugging the mountains, so, winter is not a suitable season for visiting.",
       "location": "Rustampur union of Gowainghat, Sylhet District",
       "rating": 4.5,
@@ -146,7 +146,7 @@
     {
       "name": "Jaflong",
       "image": "https://i.ibb.co/t4tYBF3/Jaflong-2.jpg",
-      "category": "winter",
+      "category": "Winter",
       "info": "This place is situated at the Bangladesh-India border. It is one of the most attractive places in Bangladesh. It is also an adventurous place. It is a hilly area and you can enjoy the waterfall on the way of Jaflong to Sylhet. The hills of Jaflong are greenish with forest and there are many wild animals in the forest. Tea garden and zero points are the most beautiful spot of Jaflong.",
       "location": "Gowainghat Upazila, Sylhet District ",
       "rating": 4.8,
@@ -164,7 +164,7 @@
     {
       "name": "Ratatgul Swamp Forest",
       "image": "https://i.ibb.co/b7pvfKb/SAVE-20200617-160556.jpg",
-      "category": "rainy",
+      "category": "Rainy",
       "info": "Ratargul Swamp Forest is the only swamp forest in Bangladesh where you can enjoy different kinds of creatures here like monkey, eagle, insects, fish, birds, etc and this evergreen forest is located beside a river named Goain. You have to request and take permission from the forest office to arrange a boat to explore the forest. Monsoon is the best time to explore the forest.",
       "location": "Gowainghat Upazila, Sylhet District",
       "rating": 4.5,
@@ -182,7 +182,7 @@
     {
       "name": "Malnicherra Tea Garden",
       "image": "https://i.ibb.co/54hGKB6/tea-garden6512.jpg",
-      "category": "summer",
+      "category": "Summer",
       "info": "Malnicherra tea garden is one of the oldest and largest tea gardens in the subcontinent. If you want to enjoy the beauty of the tea garden in Sylhet, you must have to visit Malnicherra. Though the tea garden is now under private supervision, it is known as a place of choice for tourists to have a quality time. Better you seek permission from the authority to avoid complications before entering the tea garden.",
       "location": "Sylhet district, Bangladesh",
       "rating": 4.8,
@@ -200,7 +200,7 @@
     {
       "name": "Inani Beach",
       "image": "https://i.ibb.co/pK6z4WQ/inani-11.jpg",
-      "category": "summer",
+      "category": "Summer",
       "info": "Inani beach is known as a wonderful beach for its corals which become green in summer and rainy season. The blue water, sunrise, and sunset will help you to make you a memorable trip. You can bath here without any fear of a shark. You can see here crab, snail, sea fish, and many more creatures. The view of hills here will also touch your mind.",
       "location": "Ukhia Upazila, Cox's Bazar District",
       "rating": 4.5,
@@ -218,7 +218,7 @@
     {
       "name": "Sitakundu",
       "image": "https://i.ibb.co/GVzbXxq/Suptadhara-Waterfall-Sitakunda.jpg",
-      "category": "winter",
+      "category": "Winter",
       "info": "Sitakundu is one of the oldest sites in Bangladesh.  If you want to soothe your mind then definitely enjoy the natural and charming beauty of sitakundu. It is very famous for the Chandranath temple and Buddhist temples. Many waterfalls, mountains, and green rivers make the place heaven. If you are nature and adventure lover then you must visit this place.",
       "location": "Sitakunda Upazila, Chattogram District",
       "rating": 4.8,
@@ -254,7 +254,7 @@
     {
       "name": "Patenga Sea Beach",
       "image": "https://i.ibb.co/Q8bQKbP/Patenga-Sea-Beach-Chittagong-01-700x394.jpg",
-      "category": "winter",
+      "category": "Winter",
       "info": "If you want to get away from busy city life then you can visit Patenga Sea Beach to enjoy the Bay of Bengal and the charming sunset. You can enjoy a water drive or boat trip here. There are also other entertainment facilities like a bike ride, horse ride, kites, etc. But the beach is narrow so it is better not to swim here.",
       "location": "Chittagong, Bangladesh",
       "rating": 4.5,
@@ -272,7 +272,7 @@
     {
       "name": "Mohasthan Garh",
       "image": "https://i.ibb.co/sHzzjhK/mahasthangarh-bogura.jpg",
-      "category": "summer",
+      "category": "Summer",
       "info": "Mohasthan Garh is the oldest city in Bengal. This place presents the glorious past of Pundranagar. The significant places of Mahasthangarh that you can visit our -Gobinda Vita, Gokul Medh, Bairagir Vita, Parasuramer Prasad, Mankalir Dhap, Bangla-French Exploration, Khulnar Dhap.",
       "location": "Shibganj upazila, Bogra District",
       "rating": 4.5,
@@ -290,7 +290,7 @@
     {
       "name": "Shat Gambuj Mosque",
       "image": "https://i.ibb.co/2gFBY4h/Shat-Gombuj-Mosque-oyxcq1vua6d3su8tm6ge4ebfdtmz78q2jqjvy1g5cu.jpg",
-      "category": "summer",
+      "category": "Summer",
       "info": "Saat Gambuj Mosque is one of the most dignified of the ancient Bengal and during the 15th century, it was known as the greatest congregational mosques of Khan Jahan Ali. The mosque contains a total of 81 domes including 70 domes on the prayer hall, 7 domes on the central corridor & 4 domes on the corner tower which are the best tourist attraction of Bagerhat",
       "location": "Bagerhat district, Khulna Division",
       "rating": 4.5,
@@ -362,7 +362,7 @@
     {
       "name": "Nikli Haor",
       "image": "https://i.ibb.co/PspRFTQ/Nikli-Haor-Road-1000x530.jpg",
-      "category": "rainy",
+      "category": "Rainy",
       "info": "Nikli Haor is a really amazing who wants to go lost for some time in nature. If you’re interested in taking an excursion on the double-water, head towards Nikli Haor. Small towns which appear as floating islands on the sea clear water and fishermen’s obsession with fishing, tiny waters, like Ratargul along with fresh and delicious haor salmon to take in. If you’re looking to experience everything, Nikli’s amazing haor tour will remain in your memory.",
       "location": "Nikli Upazila, Kishoreganj, Bangladesh",
       "rating": 4.8,
@@ -380,7 +380,7 @@
     {
       "name": "Mainamati",
       "image": "https://i.ibb.co/tMkDQ5N/Trip-to-Mainamati.jpg",
-      "category": "winter",
+      "category": "Winter",
       "info": "Mainamati is the finest archeological structure of the Comilla district which is mainly a ‘ War Cemetery’ surrounded by historical ruins and the main attractions of the place are- Shalban Bihar, Mainamati Museum, Lalmai Hill Ranges, Old Capital Sonargaon & Panama Nagar, so, I think you should visit this place with your family & friends.",
       "location": "Comilla District, Chittagong Division",
       "rating": 4.5,

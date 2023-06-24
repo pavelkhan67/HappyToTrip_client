@@ -8,7 +8,7 @@ const PaymentHistory = () => {
     const PaymentHistory = booked;
 
     return (
-        <div className='h-full w-full lg:w-11/12 mx-auto'>
+        <div className='h-full w-11/12 mx-auto'>
             <Helmet>
                 <title>Happy To Trip | My Payment History</title>
             </Helmet>

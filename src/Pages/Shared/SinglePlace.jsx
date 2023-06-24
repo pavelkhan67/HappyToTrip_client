@@ -12,7 +12,7 @@ const SinglePlace = () => {
     const { user } = useContext(AuthContext);
     const [, refetch] = useSelected();
     const place = useLoaderData();
-    const { _id, name, image, info, location, rating, hotels } = place;
+    const { _id, name, image, info, location, rating, category, hotels } = place;
 
     useEffect(() => {
         AOS.init();
@@ -70,6 +70,9 @@ const SinglePlace = () => {
                     <h1 className="text-5xl font-bold">{name}</h1>
                     <p className="pt-5">{info}</p>
                     <p className="pt-3"><span className='font-semibold'>Location:</span> {location}</p>
+                    {
+                        category === 'popular' ? <p className="pt-3"><span className='font-semibold'>Best time to visit:</span> All Season</p> : <p className="pt-3"><span className='font-semibold'>Best time to visit:</span> {category} Season</p>
+                    }
                     <p className="pt-3 flex items-center gap-2"><span className='font-semibold'>Rating:</span> {rating} <FaStar className='text-yellow-500'></FaStar></p>
                     <p className="py-4 text-lg font-semibold text-center">Hotels Where You Can Stay During Travel</p>
                     <div className='grid md:grid-cols-2 gap-5 mb-6'>
