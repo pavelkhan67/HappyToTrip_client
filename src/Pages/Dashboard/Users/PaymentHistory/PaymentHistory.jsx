@@ -10,7 +10,7 @@ const PaymentHistory = () => {
     return (
         <div className='h-full w-11/12 mx-auto'>
             <Helmet>
-                <title>Happy To Trip | My Payment History</title>
+                <title>TravelEase | My Payment History</title>
             </Helmet>
             <div className="w-8/12 md:w-full ml-2 md:ml-0">
                 <SectionTitle

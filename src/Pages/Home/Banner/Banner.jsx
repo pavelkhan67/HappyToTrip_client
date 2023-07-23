@@ -27,7 +27,7 @@ const Banner = () => {
                     <div className=" absolute h-full flex items-center gap-4 left-0 top-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
                         <div className='text-white space-y-7 w-10/12 lg:w-1/2 pl-16' data-aos="fade-down-right" data-aos-duration="1000">
                             <h2 className=' text-4xl lg:text-5xl font-bold text-start'>Travel opens your heart, broadens your mind, and fills your life with stories to tell.</h2>
-                            <p>Welcome to Happy to Trip! Your gateway to unforgettable travel experiences. Discover, explore, and create memories that last a lifetime. Start your journey with us today. Happy travels from our team</p>
+                            <p>Welcome to TravelEase! Your gateway to unforgettable travel experiences. Discover, explore, and create memories that last a lifetime. Start your journey with us today. Happy travels from our team</p>
                             <div className='flex gap-5 '>
                                 <Link to='/places'>
                                     <button className='btn btn-outline text-green-600 bg-slate-100 border-0 border-b-4 border-r-4 border-green-600'>See More</button>
@@ -44,7 +44,7 @@ const Banner = () => {
                     <div className=" absolute h-full flex items-center gap-4 left-0 top-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
                         <div className='text-white space-y-7 w-10/12 lg:w-1/2 pl-16' data-aos="fade-down-right" data-aos-duration="1000">
                             <h2 className=' text-4xl lg:text-5xl font-bold text-start'>I want to make memories all over the world.</h2>
-                            <p>Welcome to Happy to Trip, where your travel dreams come true. Embark on extraordinary adventures, uncover hidden gems, and create lifelong memories. Start your journey with us today. Happy travels from our team</p>
+                            <p>Welcome to TravelEase, where your travel dreams come true. Embark on extraordinary adventures, uncover hidden gems, and create lifelong memories. Start your journey with us today. Happy travels from our team</p>
                             <div className='flex gap-5 '>
                                 <Link to='/places'>
                                     <button className='btn btn-outline text-green-600 bg-slate-100 border-0 border-b-4 border-r-4 border-green-600'>See More</button>
@@ -61,7 +61,7 @@ const Banner = () => {
                     <div className=" absolute h-full flex items-center gap-4 left-0 top-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
                         <div className='text-white space-y-7 w-10/12 lg:w-1/2 pl-16' data-aos="fade-down-right" data-aos-duration="1000">
                             <h2 className=' text-4xl lg:text-5xl font-bold text-start'>Happiness is planning a trip with the ones that you love.</h2>
-                            <p>Welcome to Happy to Trip! Your gateway to unforgettable travel experiences. Discover, explore, and create memories that last a lifetime. Start your journey with us today. Happy travels from our team</p>
+                            <p>Welcome to TravelEase! Your gateway to unforgettable travel experiences. Discover, explore, and create memories that last a lifetime. Start your journey with us today. Happy travels from our team</p>
                             <div className='flex gap-5 '>
                                 <Link to='/places'>
                                     <button className='btn btn-outline text-green-600 bg-slate-100 border-0 border-b-4 border-r-4 border-green-600'>See More</button>
@@ -78,7 +78,7 @@ const Banner = () => {
                     <div className=" absolute h-full flex items-center gap-4 left-0 top-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
                         <div className='text-white space-y-7 w-10/12 lg:w-1/2 pl-16' data-aos="fade-down-right" data-aos-duration="1000">
                             <h2 className=' text-4xl lg:text-5xl font-bold text-start'>Travel opens your heart, broadens your mind, and fills your life with stories to tell.</h2>
-                            <p>Welcome to Happy to Trip, where your travel dreams come true. Embark on extraordinary adventures, uncover hidden gems, and create lifelong memories. Start your journey with us today. Happy travels from our team</p>
+                            <p>Welcome to TravelEase, where your travel dreams come true. Embark on extraordinary adventures, uncover hidden gems, and create lifelong memories. Start your journey with us today. Happy travels from our team</p>
                             <div className='flex gap-5 '>
                                 <Link to='/places'>
                                     <button className='btn btn-outline text-green-600 bg-slate-100 border-0 border-b-4 border-r-4 border-green-600'>See More</button>

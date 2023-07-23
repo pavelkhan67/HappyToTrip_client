@@ -19,7 +19,7 @@ const SinglePlace = () => {
     }, [])
 
     const handleSelect = place => {
-        // console.log(item);
+        // console.log(place);
         if (user && user.email) {
             const SelectedItem = { SelectedPlaceId: _id, name, image, location, email: user.email }
             fetch('https://happy-to-trip-server.vercel.app/selected', {
@@ -32,12 +32,12 @@ const SinglePlace = () => {
                 .then(res => res.json())
                 .then(data => {
                     if (data.insertedId) {
-                        refetch(); // refetch cart to update the number of items in the cart
+                        refetch(); // refetch cart to update the number of places in the cart
                         Swal.fire({
                             icon: 'success',
                             title: 'Place Selected To MyPlaceList.',
                             showConfirmButton: false,
-                            timer: 1500
+                            timer: 1000
                         })
                     }
                 })
@@ -62,7 +62,7 @@ const SinglePlace = () => {
 
         <div className="hero min-h-screen bg-base-200 my-5">
             <Helmet>
-                <title>Happy To trip | Place Details</title>
+                <title>TravelEase | Place Details</title>
             </Helmet>
             <div className="hero-content flex-col lg:flex-row">
                 <img src={image} className="w-full lg:max-w-sm h-[50vh] lg:h-[100vh] rounded-lg shadow-2xl" />

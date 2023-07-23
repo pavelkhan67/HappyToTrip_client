@@ -49,7 +49,7 @@ const MyHotels = () => {
     return (
         <div className='h-full w-11/12 mx-auto'>
             <Helmet>
-                <title>Happy To Trip | My Hotels</title>
+                <title>TravelEase | My Hotels</title>
             </Helmet>
             <div className="w-3/5 md:w-full">
             <SectionTitle

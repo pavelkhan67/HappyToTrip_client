@@ -38,7 +38,7 @@ const Login = () => {
     return (
         <>
             <Helmet>
-                <title>Happy To Trip | Login</title>
+                <title>TravelEase | Login</title>
             </Helmet>
             <div className="hero min-h-screen bg-base-200">
                 <div className="hero-content flex-col md:flex-row">
@@ -66,7 +66,7 @@ const Login = () => {
                             <div className="form-control mt-6">
                                 <input className="btn btn-outline text-green-600 bg-slate-100 border-0 border-b-4 border-r-4 border-green-600" type="submit" value="Login" />
                             </div>
-                            <p><small>New to Happy To Trip? <NavLink to="/signup"><span className='text-green-600 underline'>Register</span></NavLink> </small></p>
+                            <p><small>New to TravelEase? <NavLink to="/signup"><span className='text-green-600 underline'>Register</span></NavLink> </small></p>
                         </form>
                         <GoogleLogin></GoogleLogin>
                     </div>

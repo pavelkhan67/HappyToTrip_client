@@ -45,7 +45,7 @@ const AllUsers = () => {
     return (
         <div className="h-full w-11/12 mx-auto">
             <Helmet>
-                <title>Happy To Trip | Manage Users</title>
+                <title>TravelEase | Manage Users</title>
             </Helmet>
             <div className="w-8/12 md:w-full ml-2 md:ml-0">
                 <SectionTitle

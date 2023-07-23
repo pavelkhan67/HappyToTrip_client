@@ -27,7 +27,7 @@ const AllHotels = () => {
             transition={{ duration: 2 }}
         >
             <Helmet>
-                <title>Happy To Trip | All Hotels</title>
+                <title>TravelEase | All Hotels</title>
             </Helmet>
             <div className="lg:my-10">
                 <SectionTitle

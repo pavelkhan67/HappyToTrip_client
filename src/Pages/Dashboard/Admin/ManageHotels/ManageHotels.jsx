@@ -28,7 +28,7 @@ const ManageHotels = () => {
                     icon: 'success',
                     title: `${item.name} is Approved!`,
                     showConfirmButton: false,
-                    timer: 1500
+                    timer: 1000
                   })
             }
         })
@@ -46,7 +46,7 @@ const ManageHotels = () => {
                     icon: 'success',
                     title: `${item.name} is Denied!`,
                     showConfirmButton: false,
-                    timer: 1500
+                    timer: 1000
                   })
             }
         })
@@ -55,7 +55,7 @@ const ManageHotels = () => {
     return (
         <div className='h-full w-11/12 mx-auto'>
             <Helmet>
-                <title>Happy To Trip | Manage Hotels</title>
+                <title>TravelEase | Manage Hotels</title>
             </Helmet>
             <div className="w-7/12 md:w-full">
                 <SectionTitle

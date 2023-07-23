@@ -33,7 +33,7 @@ const Dashboard = () => {
             transition={{ duration: 1 }}
         >
             <Helmet>
-                <title>Happy To Trip | Dashboard</title>
+                <title>TravelEase | Dashboard</title>
             </Helmet>
             <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content lg:flex flex-col items-center justify-center mt-5">

@@ -39,7 +39,7 @@ const AddHotel = () => {
                                     icon: 'success',
                                     title: 'Hotel added successfully',
                                     showConfirmButton: false,
-                                    timer: 1500
+                                    timer: 1000
                                 })
                             }
                         })
@@ -51,7 +51,7 @@ const AddHotel = () => {
     return (
         <div className="w-full px-10">
             <Helmet>
-                <title>Happy To trip | Add Hotel</title>
+                <title>TravelEase | Add Hotel</title>
             </Helmet>
             <SectionTitle
                 heading="Add A Hotel"

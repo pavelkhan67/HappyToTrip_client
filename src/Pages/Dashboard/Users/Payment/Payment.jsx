@@ -42,7 +42,7 @@ const Payment = () => {
     return (
         <div className="mx-10 w-10/12">
             <Helmet>
-                <title>Happy To Trip | Payment</title>
+                <title>TravelEase | Payment</title>
             </Helmet>
             <h2 className="text-3xl font-semibold py-5"> Pay Bill To Confirm Your Hotel!</h2>
             <Elements stripe={stripePromise}>

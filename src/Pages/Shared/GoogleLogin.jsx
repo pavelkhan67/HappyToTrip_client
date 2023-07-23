@@ -30,7 +30,7 @@ const GoogleLogin = () => {
                             icon: 'success',
                             title: 'User Login successfully.',
                             showConfirmButton: false,
-                            timer: 1500
+                            timer: 1000
                         });
                         navigate(from, { replace: true });
 

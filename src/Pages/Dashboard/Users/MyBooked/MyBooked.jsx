@@ -12,7 +12,7 @@ const MyBooked = () => {
     return (
         <div className='h-full w-11/12 mx-auto'>
             <Helmet>
-                <title>Happy To Trip | My Booked Hotel</title>
+                <title>TravelEase | My Booked Hotel</title>
             </Helmet>
             <SectionTitle
                 heading="My Booked Hotel"

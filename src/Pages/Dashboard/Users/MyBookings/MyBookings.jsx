@@ -50,7 +50,7 @@ const MyBookings = () => {
     return (
         <div className='h-full w-11/12 mx-auto'>
             <Helmet>
-                <title>Happy To Trip | My Hotel List</title>
+                <title>TravelEase | My Hotel List</title>
             </Helmet>
             <div className="w-full ">
                 <SectionTitle

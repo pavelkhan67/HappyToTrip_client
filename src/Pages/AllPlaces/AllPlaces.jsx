@@ -16,7 +16,7 @@ const AllPlaces = () => {
             transition={{ duration: 2 }}
         >
             <Helmet>
-                <title>Happy To Trip | All Places</title>
+                <title>TravelEase | All Places</title>
             </Helmet>
             <div className="lg:my-10">
                 <SectionTitle

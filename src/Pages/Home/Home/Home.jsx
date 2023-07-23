@@ -17,7 +17,7 @@ const Home = () => {
             transition={{ duration: 1 }}
         >
             <Helmet>
-                <title>Happy To Trip | Home</title>
+                <title>TravelEase | Home</title>
             </Helmet>
             <Banner></Banner>
             <SliderPlace></SliderPlace>

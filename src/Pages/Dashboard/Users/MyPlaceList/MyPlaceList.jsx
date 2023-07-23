@@ -40,7 +40,7 @@ const MyPlaceList = () => {
     return (
         <div className='h-full w-11/12 mx-auto'>
             <Helmet>
-                <title>Happy To Trip | My Place List</title>
+                <title>TravelEase | My Place List</title>
             </Helmet>
             <div className="w-10/12 md:w-full ">
             <SectionTitle

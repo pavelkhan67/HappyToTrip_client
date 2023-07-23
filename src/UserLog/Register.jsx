@@ -42,7 +42,7 @@ const Register = () => {
                                         icon: 'success',
                                         title: 'User created successfully.',
                                         showConfirmButton: false,
-                                        timer: 1500
+                                        timer: 1000
                                     });
                                     navigate('/');
                                 }
@@ -55,7 +55,7 @@ const Register = () => {
     return (
         <>
             <Helmet>
-                <title>Happy To Trip | Sign Up</title>
+                <title>TravelEase | Sign Up</title>
             </Helmet>
             <div className="hero min-h-screen bg-base-200">
                 <div className="hero-content flex-col lg:flex-row-reverse">
