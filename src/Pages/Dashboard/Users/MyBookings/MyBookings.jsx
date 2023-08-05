@@ -136,7 +136,7 @@ const MyBookings = () => {
                         <p className='font-semibold pt-5'>Total Taka: <span className='text-green-600'>{selectedHotelPrice * bookingDays} Tk.</span></p>
                         <div className="modal-action">
                             {/* if there is a button in form, it will close the modal */}
-                            <Link to={`/dashboard/payment/${selectedHotelId}`}><button className="btn btn-outline text-green-600 bg-slate-100 border-0 border-b-4 border-r-4 border-green-600">PAY</button></Link>
+                            <Link to={`/dashboard/payment/${selectedHotelId}`}><button className="btn btn-outline text-green-600 bg-slate-100 border-0 border-b-4 border-r-4 border-green-600">Submit</button></Link>
                         </div>
                     </form>
                 </dialog>
