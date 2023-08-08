@@ -8,7 +8,7 @@ const ManageHotels = () => {
     const { data: hotels = [], isLoading: loading, refetch } = useQuery({
         queryKey: ['addedhotel'],
         queryFn: async () => {
-            const res = await fetch('https://happy-to-trip-server.vercel.app/addedhotell');
+            const res = await fetch('http://localhost:5000/addedhotell');
             return res.json();
         }
     })
@@ -16,7 +16,7 @@ const ManageHotels = () => {
     console.log(ManageHotel);
 
     const handleApprove = item =>{
-        fetch(`https://happy-to-trip-server.vercel.app/addedhotell/approve/${item._id}`, {
+        fetch(`http://localhost:5000/addedhotell/approve/${item._id}`, {
             method: 'PATCH'
         })
         .then(res => res.json())
@@ -34,7 +34,7 @@ const ManageHotels = () => {
         })
     }
     const handleDeny = item =>{
-        fetch(`https://happy-to-trip-server.vercel.app/addedhotell/deny/${item._id}`, {
+        fetch(`http://localhost:5000/addedhotell/deny/${item._id}`, {
             method: 'PATCH'
         })
         .then(res => res.json())

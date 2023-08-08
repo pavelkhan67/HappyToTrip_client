@@ -12,7 +12,7 @@ const AllHotels = () => {
     const [allHotels, setAllHotels] = useState(hotel);
 
     const handleSearch = () => {
-        fetch(`https://happy-to-trip-server.vercel.app/search/${searchText}`)
+        fetch(`http://localhost:5000/search/${searchText}`)
             .then((res) => res.json())
             .then((data) => {
                 // console.log(data);

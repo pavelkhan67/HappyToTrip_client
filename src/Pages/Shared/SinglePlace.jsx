@@ -22,7 +22,7 @@ const SinglePlace = () => {
         // console.log(place);
         if (user && user.email) {
             const SelectedItem = { SelectedPlaceId: _id, name, image, location, email: user.email }
-            fetch('https://happy-to-trip-server.vercel.app/selected', {
+            fetch('http://localhost:5000/selected', {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'

@@ -7,7 +7,7 @@ const MyBooked = () => {
 
     const [booked, refetch] = useBooked();
     const BookedHotel = booked;
-    // console.log(BookedHotel);
+    console.log(BookedHotel);
 
     return (
         <div className='h-full w-11/12 mx-auto'>
@@ -29,7 +29,11 @@ const MyBooked = () => {
                             <th>Hotel</th>
                             <th>Hotel Name</th>
                             <th>Price</th>
-                            <th>Date</th>
+                            <th>Booking Date</th>
+                            <th>Booked From</th>
+                            <th>Number of Days</th>
+                            <th>Total Price</th>
+
                         </tr>
                     </thead>
                     <tbody>
@@ -52,6 +56,9 @@ const MyBooked = () => {
                                 </td>
                                 <td>{item.price} Tk.</td>
                                 <td>{item.date.split('T')[0]}</td>
+                                <td>{item.bookingDate}</td>
+                                <td>{item.bookingDay} Days</td>
+                                <td>{item.totalPrice} Tk.</td>
                             </tr>)
                         }
                     </tbody>

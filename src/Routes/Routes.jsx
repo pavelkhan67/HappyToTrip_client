@@ -20,6 +20,7 @@ import AllUsers from "../Pages/Dashboard/Admin/ManageUsers/AllUsers";
 import ManageHotels from "../Pages/Dashboard/Admin/ManageHotels/ManageHotels";
 import AddHotel from "../Pages/Dashboard/Manager/AddHotel/AddHotel";
 import MyHotels from "../Pages/Dashboard/Manager/MyHotels/MyHotels";
+import Success from "../Pages/Dashboard/Users/Payment/Success";
 
 
 export const router = createBrowserRouter([
@@ -38,7 +39,7 @@ export const router = createBrowserRouter([
             {
                 path: "/place/:id",
                 element: <SinglePlace></SinglePlace>,
-                loader: ({ params }) => fetch(`https://happy-to-trip-server.vercel.app/place/${params.id}`)
+                loader: ({ params }) => fetch(`http://localhost:5000/place/${params.id}`)
             },
             {
                 path: "/hotels",
@@ -47,7 +48,7 @@ export const router = createBrowserRouter([
             {
                 path: "/hotel/:id",
                 element: <SingleHotel></SingleHotel>,
-                loader: ({ params }) => fetch(`https://happy-to-trip-server.vercel.app/hotel/${params.id}`)
+                loader: ({ params }) => fetch(`http://localhost:5000/hotel/${params.id}`)
             },
             {
                 path: "/login",
@@ -56,7 +57,11 @@ export const router = createBrowserRouter([
             {
                 path: "/signup",
                 element: <Register></Register>
-            }
+            },
+            {
+                path:"/payment/success/:tran_id",
+                element:<Success></Success>
+              }
         ]
     },
     {
@@ -78,7 +83,8 @@ export const router = createBrowserRouter([
             },
             {
                 path: 'payment/:id',
-                element: <Payment></Payment>
+                element: <Payment></Payment>,
+                loader:({params})=>fetch(`http://localhost:5000/bookings/${params.id}`)
             },
             {
                 path: 'mybooked',
