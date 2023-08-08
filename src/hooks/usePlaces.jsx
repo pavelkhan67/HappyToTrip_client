@@ -5,7 +5,7 @@ const usePlaces = () => {
     const {data: place = [], isLoading: loading, refetch} = useQuery({
         queryKey: ['place'],
         queryFn: async() => {
-            const res = await fetch('http://localhost:5000/place');
+            const res = await fetch('https://happy-to-trip-server.vercel.app/place');
             return res.json();
         }
     })

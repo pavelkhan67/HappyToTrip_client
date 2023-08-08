@@ -11,7 +11,7 @@ const MyHotels = () => {
     const { data: hotels = [], isLoading: loading, refetch } = useQuery({
         queryKey: ['addedhotel'],
         queryFn: async () => {
-            const res = await fetch(`http://localhost:5000/addedhotel/?email=${user?.email}`);
+            const res = await fetch(`https://happy-to-trip-server.vercel.app/addedhotel/?email=${user?.email}`);
             return res.json();
         }
     })
@@ -28,7 +28,7 @@ const MyHotels = () => {
             confirmButtonText: 'Yes, delete it!'
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:5000/addedhotel/${hotel._id}`, {
+                fetch(`https://happy-to-trip-server.vercel.app/addedhotel/${hotel._id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())

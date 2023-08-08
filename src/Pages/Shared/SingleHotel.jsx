@@ -24,7 +24,7 @@ const SingleHotel = () => {
         // console.log(hotel);
         if (user && user.email) {
             const SelectedItem = { SelectedId: _id, name, image, price, location, category, email: user.email }
-            fetch('http://localhost:5000/bookings', {
+            fetch('https://happy-to-trip-server.vercel.app/bookings', {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'

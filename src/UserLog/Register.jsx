@@ -26,7 +26,7 @@ const Register = () => {
                 updateUserProfile(data.name, data.photoURL)
                     .then(() => {
                         const saveUser = { name: data.name, email: data.email, role:data.role }
-                        fetch('http://localhost:5000/users', {
+                        fetch('https://happy-to-trip-server.vercel.app/users', {
                             method: 'POST',
                             headers: {
                                 'content-type': 'application/json'
