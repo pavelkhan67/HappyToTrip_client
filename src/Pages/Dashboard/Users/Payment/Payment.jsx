@@ -45,7 +45,7 @@ const Payment = () => {
             data.price = Price
         console.log(data);
 
-        fetch(`https://happy-to-trip-server.vercel.app/order`, {
+        fetch(`https://happy-to-trip-server.vercel.app/hotel/order`, {
             method: "POST",
             headers: {
                 "content-type": "application/json",
@@ -54,6 +54,7 @@ const Payment = () => {
         })
             .then(res => res.json())
             .then(data => {
+                console.log(data);
                 window.location.replace(data.url)
             })
         handleUpdate(SingleHotel);
@@ -162,7 +163,7 @@ const Payment = () => {
                                         className="font-medium text-base text-gray-600 py-2"
                                         htmlFor="bookingDays"
                                     >
-                                        Number of days
+                                        Booking Date
                                     </label>
                                     <input
                                         {...register("bookingDate", { required: true })}
