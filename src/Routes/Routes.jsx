@@ -59,7 +59,7 @@ export const router = createBrowserRouter([
                 element: <Register></Register>
             },
             {
-                path:"/payment/success/:tran_id",
+                path:"/payment/success/:tranId",
                 element:<Success></Success>
               }
         ]

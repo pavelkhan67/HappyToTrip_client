@@ -32,7 +32,7 @@ const PaymentHistory = () => {
                             <th>Price</th>
                             <th>Date</th>
                             <th>Transaction Id</th>
-                            {/* <th>Payment Status</th> */}
+                            <th>Payment Status</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -56,7 +56,7 @@ const PaymentHistory = () => {
                                 <td>{item.price} Tk.</td>
                                 <td>{item.date.split('T')[0]}</td>
                                 <td>{item.transactionId}</td>
-                                {/* <td>{item.paidStatus? 'Paid' : 'Not Paid'}</td> */}
+                                <td>{item.paidStatus? 'Paid' : 'Not Paid'}</td>
                             </tr>)
                         }
                     </tbody>
