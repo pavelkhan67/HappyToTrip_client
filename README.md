@@ -1,4 +1,4 @@
-# Toy Mania
+# TravelEase
 
 Welcome to TravelEase. Experience the World's Wonders, Unveil Hidden Gems, and Create Lasting Memories with Our Travel Adventure Platform.
 
